@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Page Title</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}"> <!-- linl css file -->
+</head>
+
+<body>
+
+  <h1>XXX Bank</h1>
+  <p>XXX Bank System</p>
+  <form method="post">
+    <input type="text" name="account" required placeholder="Enter Account Number">
+    <button>Submit</button>
+  </form>
+  <p>{{amount}}</p>
+</body>
+
+</html>
