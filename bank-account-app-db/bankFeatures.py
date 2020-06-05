@@ -30,7 +30,17 @@ class BankFeatures:
         sql = "update bank set balance=%s where id=%s"
         val = (totalBalance,1)
         mycursor.execute(sql,val)
-        mydb.commit()    
+        mydb.commit() 
+    def addAcct(self):
+        print("Enter User id: ")
+        userId = raw_input()
+        print("Enter zero balance: ")
+        balance = raw_input()
+        mycursor = mydb.cursor()
+        sql = "Insert into bank (id,user_id,balance) values(%s,%s,%s)"
+        val = (2,userId,balance)
+        mycursor.execute(sql,val)
+        mydb.commit()
 
 
 

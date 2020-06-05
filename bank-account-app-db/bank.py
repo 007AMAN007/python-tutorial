@@ -11,3 +11,5 @@ class Bank:
     obj.addBalance()
   elif option=='3':
     obj.withdrawlBalance()
+  elif option=='4':
+    obj.addAcct()
