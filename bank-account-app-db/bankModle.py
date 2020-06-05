@@ -1,0 +1,2 @@
+class BankModel:
+  balance = None
